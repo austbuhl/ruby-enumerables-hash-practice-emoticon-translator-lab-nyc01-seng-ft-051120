@@ -5,6 +5,7 @@ def load_library(path)
   file = File.read(path)
   emoticons = YAML.load(file)
 
+  emoticons.to_h
 end
 
 binding.pry
