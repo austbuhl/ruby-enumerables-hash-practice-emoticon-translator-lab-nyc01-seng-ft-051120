@@ -3,7 +3,7 @@ require 'pry'
 
 def load_library(path)
   file = File.read(path)
-  emoticons = YAML.load(file)
+  emoticons = YAML.load(file).to_h
 
   emoticons.each_pair do |key, value|
     emoticons[key].each do |x|
