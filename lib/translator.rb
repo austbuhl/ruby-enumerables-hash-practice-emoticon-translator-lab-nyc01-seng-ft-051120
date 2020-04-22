@@ -5,12 +5,13 @@ def load_library(path)
 
   emoticons = YAML.load(File.read(path))
 
-  emoticons.each do |key, value|
+  emoticons.each_pair do |key, value|
+    emoticons[key].each do |x|
       {key: {
       :english => value[0],
       :japanese => value[1]
       }
-    }
+    end
   end
 end
 
@@ -24,7 +25,4 @@ def get_english_meaning
   # code goes here
 end
 
-emoticons.each_pair do |key, value|
-  emoticons[key].each do |x|
-end
-end
+
