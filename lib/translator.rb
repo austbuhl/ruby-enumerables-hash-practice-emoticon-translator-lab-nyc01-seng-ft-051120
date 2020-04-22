@@ -10,11 +10,10 @@ def load_library(path)
       {key: {
       :english => value[0],
       :japanese => value[1]
-      }
+      }}
     end
   end
 end
-
 binding.pry
 
 def get_japanese_emoticon
