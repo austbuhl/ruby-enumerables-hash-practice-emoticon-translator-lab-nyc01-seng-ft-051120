@@ -22,3 +22,6 @@ emoticons.each_pair do |key, value|
       :english => x[0],
       :japanese => x[1]
       }
+    end
+  end
+    
