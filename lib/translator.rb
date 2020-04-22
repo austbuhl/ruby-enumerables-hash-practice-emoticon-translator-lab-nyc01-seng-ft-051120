@@ -18,9 +18,5 @@ end
 
 emoticons.each_pair do |key, value|
   emoticons[key].each do |x|
-    puts {:key => {
-      :english => x[0],
-      :japanese => x[1]
-      }
-    end
-  end
+end
+end
