@@ -7,7 +7,7 @@ def load_library(path)
 
   emoticons.each_pair do |key, value|
     value.to_h
-
+end
 end
 
 binding.pry
