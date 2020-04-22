@@ -4,9 +4,6 @@ require 'pry'
 def load_library(path)
   file = File.read(path)
   emoticons = YAML.load(file).to_h
-
-
-
 end
 
 binding.pry
