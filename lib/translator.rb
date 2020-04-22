@@ -24,4 +24,3 @@ emoticons.each_pair do |key, value|
       }
     end
   end
-    
